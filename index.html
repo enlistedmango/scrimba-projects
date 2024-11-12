@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>My Scrimba Projects Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <h1>My Projects</h1>
-    <ul>
-        <li><a href="business-card/index.html">Business Card</a></li>
-        <li><a href="counter-app/index.html">Counter App</a></li>
-        <li><a href="personal-site/index.html">Personal Site</a></li>
-    </ul>
+    <header>
+        <h1>My Scrimba Projects</h1>
+        <p>Welcome to my personal projects dashboard. Check out my work below!</p>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    </header>
+    <main>
+        <div class="project-container">
+            <div class="project-card" data-project="business-card">
+                <h2>Business Card</h2>
+                <p>A digital business card template.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="project-card" data-project="counter-app">
+                <h2>Counter App</h2>
+                <p>A simple interactive counter application.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="project-card" data-project="personal-site">
+                <h2>Personal Site</h2>
+                <p>My personal website showcasing my portfolio.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 EnlistedMango. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-link" class="button">Go to Project</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
