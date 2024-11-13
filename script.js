@@ -18,17 +18,17 @@ const projectDetails = {
     'business-card': {
         title: 'Business Card',
         description: 'A digital business card template.',
-        link: '/projects/business-card/index.html'
+        link: '../../projects/business-card/index.html'
     },
     'counter-app': {
         title: 'Counter App',
         description: 'A simple interactive counter application.',
-        link: '/projects/counter-app/index.html'
+        link: '../../projects/counter-app/index.html'
     },
     'personal-site': {
         title: 'Personal Site',
         description: 'My personal website showcasing my portfolio.',
-        link: '/projects/personal-site/index.html'
+        link: '../../projects/personal-site/index.html'
     }
 };
 
